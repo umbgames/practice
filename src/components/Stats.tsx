@@ -6,7 +6,7 @@ const stats = [
   { image: "/NDPC.jpg", value: "NDPC", label: "Nigeria Data Protection Commission" },
   { image: "/NERC.jpg", value: "NERC", label: "Nigerian Electricity Regulatory Commission" },
   { image: "/STS.jpg", value: "STS", label: "Standard Transfer Specification Association" },
-    { image: "/son.jpg", value: "SON", label: "Standards Organisation of Nigeria" },
+  { image: "/son.jpg", value: "SON", label: "Standards Organisation of Nigeria" },
   { image: "/NCDMB.jpg", value: "NCDMB", label: "Nigerian Content Development and Monitoring Board" }
 ];
 
