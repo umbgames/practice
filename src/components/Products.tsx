@@ -5,25 +5,25 @@ const products = [
   {
     name: "Smart Gas Leak Detector",
     category: "Consumer Electronics, Smart Devices",
-    image: "/assets/gas-leak-detector.jpeg",
+    image: "/gas-leak-detector.jpeg",
     description: "Our Smart Gas Leak Detector offers real-time monitoring and early detection of hazardous gas leaks to ensure safety in homes and businesses. Equipped with advanced sensors and connected via IoT technology, it instantly alerts users through mobile notifications, minimizing risks of accidents and enabling swift preventive action. This device is designed to provide peace of mind by safeguarding lives and property with reliable, continuous protection."
   },
   {
     name: "Fire Detectors",
     category: "Consumer Electronic, Smart Devices",
-    image: "/assets/fire-detector.jpeg",
+    image: "/fire-detector.jpeg",
     description: "Amal Technologies' Fire Detector provides early warning of fire outbreaks with highly sensitive smoke and heat sensors connected to smart alert systems. It sends instant notifications to users' devices, enabling rapid response to prevent damage and save lives. Designed for both residential and commercial settings, it ensures comprehensive fire safety coverage."
   },
   {
     name: "Smart Phone Charger",
     category: "Consumer Electronics, Smart Devices",
-    image: "/assets/amal-phone-charger.png",
+    image: "/amal-phone-charger.png",
     description: "Our smart Phone Charger offers fast, safe, and energy-efficient charging tailored for modern mobile devices. Built with advanced circuitry, it protects against overcharging, overheating, and short circuits, extending device lifespan and ensuring user safety. Its compact design is perfect for home, office, and on-the-go use."
   },
   {
     name: "Point of Sale (POS) System",
     category: "Financial Products",
-    image: "./assets/pos.jpg",
+    image: "/pos.jpg",
     description: "The Amal Technologies Point of Sale System is a versatile, easy-to-use solution designed to streamline retail and service transactions. Supporting multiple payment methods, inventory management, and sales analytics, it empowers businesses to operate efficiently and make data-driven decisions. Its intuitive interface and robust hardware ensure smooth daily operations."
   }
 ];

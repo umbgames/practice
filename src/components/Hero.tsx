@@ -55,7 +55,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent z-10" />
               <video autoPlay muted playsInline loop className="w-full h-100 object-cover">
                 <source 
-                src="./assets/Amal-product.mp4"
+                src="/Amal-product.mp4"
                 type="video/mp4"/>
             </video>
               <div className="absolute bottom-6 left-6 right-6 z-20">

@@ -2,12 +2,12 @@ import { motion } from 'motion/react';
 import { Target, Users, MapPin, Award } from 'lucide-react';
 
 const stats = [
-  { image: "./assets/NEMSA.jpg", value: "NEMSA", label: "Nigerian Electricity Management Services Agency" },
-  { image: "./assets/NDPC.jpg", value: "NDPC", label: "Nigeria Data Protection Commission" },
-  { image: "./assets/NERC.jpg", value: "NERC", label: "Nigerian Electricity Regulatory Commission" },
-  { image: "./assets/STS.jpg", value: "STS", label: "Standard Transfer Specification Association" },
-    { image: "./assets/son.jpg", value: "SON", label: "Standards Organisation of Nigeria" },
-  { image: "./assets/NCDMB.jpg", value: "NCDMB", label: "Nigerian Content Development and Monitoring Board" }
+  { image: "/NEMSA.jpg", value: "NEMSA", label: "Nigerian Electricity Management Services Agency" },
+  { image: "/NDPC.jpg", value: "NDPC", label: "Nigeria Data Protection Commission" },
+  { image: "/NERC.jpg", value: "NERC", label: "Nigerian Electricity Regulatory Commission" },
+  { image: "/STS.jpg", value: "STS", label: "Standard Transfer Specification Association" },
+    { image: "/son.jpg", value: "SON", label: "Standards Organisation of Nigeria" },
+  { image: "/NCDMB.jpg", value: "NCDMB", label: "Nigerian Content Development and Monitoring Board" }
 ];
 
 export default function Stats() {
