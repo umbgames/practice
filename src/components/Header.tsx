@@ -10,7 +10,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
             <img 
-          src="./assets/logo.jpg" 
+          src="./logo.jpg" 
           alt="Circuit Board" 
 
         />
