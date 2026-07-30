@@ -46,6 +46,17 @@ jobs:
         
       - name: Build with Next.js
         run: npm run build
+
+      - name: Inspect build output
+        run: |
+          echo "Root:"
+          ls -la
+      
+          echo ".next:"
+          ls -la .next || true
+      
+          echo "out:"
+          ls -la out || true
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
