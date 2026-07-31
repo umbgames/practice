@@ -4,6 +4,7 @@ import Topbar from './Topbar';
 import Sidebar from './Sidebar';
 import { packages, categories, projects } from '@/lib/data';
 import { PackageCard, CategoryCard, ProjectCard } from '@/components/ui/Cards';
+import ComponentLibraryView from './ComponentLibraryView';
 import Link from 'next/link';
 
 export default function InnovationLab() {
@@ -282,6 +283,7 @@ export default function InnovationLab() {
           {activeView === 'home' && renderHome()}
           {activeView === 'packages' && renderPackages()}
           {activeView === 'projects' && renderProjects()}
+          {activeView === 'library' && <ComponentLibraryView />}
           {activeView === 'achievements' && renderAchievements()}
           {activeView === 'schools' && renderSchools()}
         </div>
