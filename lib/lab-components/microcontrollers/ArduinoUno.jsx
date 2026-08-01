@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 
-const ArduinoUno = ({ width = 80, height = 55 }) => (
+const ArduinoUno = ({ width = 80, height = 55, interactivePins = {}, onPinClick }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 80 55" fill="none">
     <defs>
       <linearGradient id="uno-pcb" x1="0" y1="0" x2="0" y2="1">
@@ -42,6 +42,57 @@ const ArduinoUno = ({ width = 80, height = 55 }) => (
     {/* Branding */}
     <text x="36" y="20" fill="#fff" fontSize="5" fontFamily="sans-serif" fontWeight="bold" opacity="0.8" style={{userSelect:'none'}}>UNO</text>
     <text x="56" y="20" fill="#fff" fontSize="3" fontFamily="sans-serif" opacity="0.8" style={{userSelect:'none'}}>ARDUINO</text>
+    
+    {/* Interactive Pins Overlay */}
+    {Object.entries({
+      '5V': { cx: 31, cy: 49 },
+      'GND_ARD': { cx: 34.5, cy: 49 },
+      'D10': { cx: 58, cy: 6 },
+      'D9': { cx: 61.5, cy: 6 }
+    }).map(([pinId, coords]) => {
+      const pinData = interactivePins[pinId];
+      if (!pinData) return null;
+      
+      const { color, state } = pinData;
+      let strokeColor = '#fff';
+      let strokeWidth = '0.5';
+      let radius = 1.8;
+      let opacity = 1;
+      let className = 'cursor-pointer hover:stroke-white transition-all duration-200';
+      
+      if (state === 'connected') {
+        opacity = 0.3;
+        className = 'pointer-events-none';
+      } else if (state === 'error') {
+        strokeColor = '#ef4444';
+        strokeWidth = '1';
+        className += ' animate-shake';
+      } else if (state === 'selected') {
+        strokeColor = '#fff';
+        strokeWidth = '1.5';
+        radius = 2.5;
+      }
+      
+      return (
+        <circle 
+          key={pinId}
+          cx={coords.cx}
+          cy={coords.cy}
+          r={radius}
+          fill={state === 'error' ? '#ef4444' : color}
+          stroke={strokeColor}
+          strokeWidth={strokeWidth}
+          opacity={opacity}
+          className={className}
+          onClick={(e) => {
+            e.stopPropagation();
+            if (onPinClick && state !== 'connected') onPinClick(pinId);
+          }}
+        >
+          <title>{pinId.replace('_ARD', '')}</title>
+        </circle>
+      );
+    })}
   </svg>
 );
 

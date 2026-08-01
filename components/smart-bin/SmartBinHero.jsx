@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-export default function SmartBinHero() {
+export default function SmartBinHero({ onStart }) {
   const [demoOpen, setDemoOpen] = useState(false);
 
   return (
@@ -27,9 +27,9 @@ export default function SmartBinHero() {
             <span className="bg-white border border-[var(--line)] rounded-[14px] p-[10px_13px] text-[0.84rem] font-extrabold text-[#071A33]">Arduino + prototyping</span>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a href="#mission-1" className="border-0 rounded-[14px] p-[14px_18px] font-black inline-flex items-center gap-[9px] no-underline transition-transform hover:-translate-y-0.5 bg-gradient-to-br from-[var(--orange)] to-[#FF9C2A] text-white shadow-[0_14px_30px_rgba(255,122,0,.25)]">
+            <button type="button" onClick={onStart} className="border-0 rounded-[14px] p-[14px_18px] font-black inline-flex items-center gap-[9px] no-underline transition-transform hover:-translate-y-0.5 bg-gradient-to-br from-[var(--orange)] to-[#FF9C2A] text-white shadow-[0_14px_30px_rgba(255,122,0,.25)] cursor-pointer">
               Start the mission →
-            </a>
+            </button>
             <Link href="/lab" className="border-0 rounded-[14px] p-[14px_18px] font-black inline-flex items-center gap-[9px] no-underline transition-transform hover:-translate-y-0.5 bg-gradient-to-br from-[#00a8c5] to-[#087d94] text-white shadow-[0_14px_30px_rgba(0,184,217,.2)]">
               ⚡ Enter Live Circuit Lab
             </Link>
