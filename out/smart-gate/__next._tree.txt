@@ -1,3 +1,0 @@
-:HL["/_next/static/chunks/1uyad4-k9iyud.css","style"]
-:HL["/_next/static/chunks/0fasg-6mbtcvt.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"smart-gate","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Pmsda35u7fb9hDJzkWvGK"}
