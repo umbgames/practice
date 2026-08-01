@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/practice/_next/static/chunks/05-c3ty_6dwfk.js","/practice/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
+3:I[97367,["/practice/_next/static/chunks/05-c3ty_6dwfk.js","/practice/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/practice/_next/static/chunks/05-c3ty_6dwfk.js","/practice/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Maskido Virtual Innovation Lab"}],["$","meta","1",{"name":"description","content":"Maskido Virtual Innovation Lab – learn, build, simulate and innovate."}],["$","link","2",{"rel":"icon","href":"/practice/icon.png?icon.0dt2sa7hgptl8.png","sizes":"1646x2048","type":"image/png"}],["$","$L5","3",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"0H10cIlsFPmIEeeiQI65R"}
