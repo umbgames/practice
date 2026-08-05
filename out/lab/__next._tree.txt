@@ -1,3 +1,0 @@
-:HL["/practice/_next/static/chunks/4586chzjcqpi2.css","style"]
-:HL["/practice/_next/static/chunks/1k4j49duo8gbh.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"lab","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Nn00rhhClmVUsSWhAlocx"}
